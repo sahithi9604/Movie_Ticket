@@ -4,9 +4,9 @@ import boto3  # AWS SDK
 
 # ---------------- AWS Configuration ----------------
 AWS_REGION = 'us-east-1'
-USERS_TABLE = 'movie_magic_user'
-SERVICES_TABLE = 'movie_magic_server'
-BOOKINGS_TABLE = 'movie_magic_booking'  
+USERS_TABLE = 'movie_magic_ticket_user'
+SERVICES_TABLE = 'movie_magic_ticket_server'
+BOOKINGS_TABLE = 'movie_magic_ticket_booking'  
 SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:605134439175:movie_magic_topic"
 dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
 sns_client = boto3.client('sns', region_name=AWS_REGION)
